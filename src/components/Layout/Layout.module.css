@@ -1,0 +1,69 @@
+.header {
+    margin-bottom: 2.2rem;
+}
+
+.body {
+    padding: 0 1.6rem 4rem;
+}
+
+.main__body-content {
+    display: flex;
+}
+
+.body__sidebar {
+    display: none;
+}
+
+.main {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.fading-bottom {
+    position: fixed;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--fading-bottom) 100%);
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 10.8rem;
+}
+
+@media (width < 768px) {
+    :global(body.game-modal-open) .header {
+        position: sticky;
+        top: -1px;
+        z-index: 1000;
+    }
+}
+
+@media (width >= 768px) {
+    .body {
+        padding: 0 2.4rem 4rem;
+    }
+
+    .main {
+        margin-top: 11.5rem;
+        margin-bottom: 2.2rem;
+    }
+}
+
+@media (width >= 1200px) {
+    .body {
+        padding: 0 4rem 4rem;
+    }
+
+    .main {
+        margin-top: 11.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .main__body-content {
+        gap: 4rem;
+    }
+
+    .body__sidebar {
+        display: block;
+        min-width: max-content;
+        width: 20rem;
+    }
+}

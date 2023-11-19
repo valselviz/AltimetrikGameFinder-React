@@ -1,0 +1,35 @@
+.card__game-details-atributes-name {
+    margin-right: 0.8rem;
+    line-height: 1.2;
+    color: #939393;
+}
+
+.card__game-details-atributes-value {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.2;
+    justify-content: right;
+    max-width: 12rem;
+}
+
+/* Styles for tablet size */
+@media (width >= 768px) {
+    .card__game-details-atributes-name {
+        width: 9.7rem;
+        text-align: left;
+    }
+
+    .single-column.card__game-details-atributes-name {
+        width: auto;
+        margin-right: 1.5rem;
+    }
+
+    .card__game-details-atributes-value {
+        justify-content: left;
+    }
+
+    .single-column.card__game-details-atributes-value {
+        justify-content: right;
+    }
+}

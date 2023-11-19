@@ -1,0 +1,29 @@
+.game-data-back-modal {
+    padding: 3rem 3.3rem;
+    background-color: var(--neutral-color-6);
+    transform: rotateY(180deg);
+    min-height: 100%;
+}
+
+:global(body.light) .game-data-back-modal__platforms__icons {
+    filter: none;
+}
+
+.game-data-back-modal__title {
+    color: var(--back-modal-title);
+}
+
+:global(body.light) .game-data-back-modal__title {
+    text-shadow: none;
+}
+
+.game-data-back-modal__back-btn {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 5rem;
+}
+
+.game-modal-data-back__description {
+    -webkit-line-clamp: initial;
+    margin-top: 3rem;
+}
